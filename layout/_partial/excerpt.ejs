@@ -1,5 +1,5 @@
-<% if (post.excerpt) { %>
-  <%- post.excerpt %>
+<% if (post.description) { %>
+  <%- post.description %>
 <% } else { %>
-  <%= (post.raw.match(/excerpts?:\s*([^\n]+)\n/) || ['', ''])[1] %>
+  <%= (post.raw.match(/description?:\s*([^\n]+)\n/) || ['', ''])[1] %>
 <% } %>
